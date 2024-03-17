@@ -29,9 +29,8 @@ function powa(a: bigint): bigint {
 	const b: bigint = BigInt(10);
 	return b**a;
 }
-async function main() {
+async function main(controller: string) {
   const CRVUSD: string = "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E";
-  const controller: string = "0xEdA215b7666936DEd834f76f3fBC6F323295110A"; //crv-long
   const params: ParamCall = [controller];
   const [chainViewResponse] = await chainView<
     ParamCall,
@@ -64,5 +63,8 @@ async function main() {
     console.log()
   }
 }
-
-main();
+let control: string | undefined = process.argv[2];
+if (control === undefined) {
+  control = "0xEdA215b7666936DEd834f76f3fBC6F323295110A";//crv-long
+}
+main(control);
