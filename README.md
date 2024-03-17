@@ -5,6 +5,7 @@
 
 install the relevant dependancy and ts-node then run
 
+`npx chainview compile`
 `ts-node lend.ts`
 
 ## ChainView-Dev-Contest
