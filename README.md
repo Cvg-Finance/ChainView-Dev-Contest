@@ -1,33 +1,24 @@
-# ChainView-Dev-Contest
+# LLAMAVIEW
 
-## Rules 
-### Duration ⏳
-3 weeks (from 2024-02-26 00:00 UTC to 2024-03-18 00:00 UTC)
+## Utility
 
-### Order 📝
-Discover the power of ChainView by making a code base , and  find the most useful usage to present it to the judges (you can use other libs and tools if you want)
+This ChainView script query a LLAMALEND market and return the current utilisation.
 
-### Prizes 🎖
-First place : 300 USDC + 1 Convergence Finance hoodie  + specific role in discord
-Second place : 200 USDC + 1 Convergence Finance cap  + specific role in discord
+## Execute
 
-### Submission 📩
-Fork this repo, then submit by doing a Pull Request from the main branch
+install the relevant dependancy and ts-node then run:
+1)
 
-### Judgement 👨🏻‍⚖️
-We will deliberate to find the most useful/impressive/funny project and gives you the result 1 week after the end of the contest through an announcement in the Convergence Discord
+`npm install`
 
-### Comments ✍🏻
-Feel free to comment and participate in the Pull Requests, your opinion can influence the final deliberation
+2) (optional) to (re) compile the chainview compatible smartcontract
 
-### Help 🖐🏻
-If you need some help, don't hesitate to chat with us in the Discord Dev channel
+`npx chainview compile`
 
-Good Luck to Everyone !
+3) To run the script, u can pass the address of a LLAMALEND market as parameter
+(the address is optional, if not provided the default is to View CRV-long market)
+
+`ts-node lend.ts 0xEdA215b7666936DEd834f76f3fBC6F323295110A`
 
 ## Resources 
 https://github.com/Cvg-Finance/ChainView
-
-https://discord.com/invite/convergencefinance
-
-https://medium.com/@r3vert/chainview-a-new-web3-tool-8184883d27c0
